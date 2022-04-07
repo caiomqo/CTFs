@@ -1,0 +1,13 @@
+- examine the type of file with binwalk:
+	binwalk drawing.flag.svg -> Shows an XML file
+
+- copy file to xml
+	cp drawing.flag.svg drawing.flag.xml
+
+- open xml with sublime text
+	subl drawing.flag.xml
+
+- flag is divided into several sections
+
+- flag:
+	picoCTF{3nh4nc3d_aab729dd}

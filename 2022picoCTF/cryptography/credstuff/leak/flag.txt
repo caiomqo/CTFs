@@ -1,0 +1,4 @@
+- used VI to read the files
+- checked the correspondent line for user and password (line 378)
+- user ROT13 to convert the message
+- Flag: picoCTF{C7r1F_54V35_71M3}

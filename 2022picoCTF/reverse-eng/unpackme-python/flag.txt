@@ -1,0 +1,7 @@
+- opened python script in sublime text
+- saw that the plain flag was stored in "plain"
+- added print(plain)
+- grabbed flag
+
+- flag:
+picoCTF{175_chr157m45_5274ff21}

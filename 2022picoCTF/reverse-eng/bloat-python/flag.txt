@@ -1,0 +1,9 @@
+- opened python script in sublime text
+- checked that following lines could be commented:
+	#arg432 = arg232()
+	#arg133(arg432)
+
+- ran script
+
+- flag:
+picoCTF{d30bfu5c4710n_f7w_b8062eec}

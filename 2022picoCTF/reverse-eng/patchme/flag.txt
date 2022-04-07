@@ -1,0 +1,8 @@
+- opened the python code in sublime text
+- checked what was the password
+- executed the script with python3
+- inputted the password
+- grabbed the flag
+
+- flag:
+picoCTF{p47ch1ng_l1f3_h4ck_c4a4688b} 

@@ -1,0 +1,5 @@
+- opened audio file in audacity
+- translated morse code
+- flag:
+
+WH47_H47H_90D_W20U9H7

@@ -1,0 +1,35 @@
+Diffie-Hellman
+
+p = 13
+g = 5
+
+a = 7
+b = 3
+
+Alice sent text with letters and digits using the
+generated key as the shift amount for a Caesar cipher
+over the alphabet and decimal digits.
+
+A = g^a mod p
+A = 5^7 mod 13
+A = 8 (Public)
+
+B = g^b mod p
+B = 5^3 mod 13
+B = 8 (Public)
+
+K = B^a mod p
+K = 8^7 mod 13
+K = 5
+
+K = A^b mod p
+K = 8^3 mod 13
+K = 5
+
+Used 5 to decode Caesar Cipher.
+Used this site:
+https://www.dcode.fr/caesar-cipher
+(had to include numbers from 0-9 in "alphabet")
+
+flag:
+picoCTF{C4354R_C1PH3R_15_4_817_0U7D473D_84AA1DA8}

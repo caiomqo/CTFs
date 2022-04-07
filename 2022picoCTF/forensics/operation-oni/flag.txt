@@ -1,0 +1,41 @@
+- downloaded image file
+- extracted with gunzip
+	gunzip gunzip disk.img.gz
+
+- checked partitions on the image:
+	mmls disk.image
+
+- listed the files on the image:
+	 fls -o 2048
+	 fls -o 2048 disk.img
+	 fls -o 206848 disk.img 470
+	 fls -o 206848 disk.img 3916
+	 fls -o 206848 disk.img 2345
+
+- read ssh file with the following command:
+	icat -o 206848 disk.img 2345
+
+- got ssh private key:
+	-----BEGIN OPENSSH PRIVATE KEY-----
+	b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+	QyNTUxOQAAACBgrXe4bKNhOzkCLWOmk4zDMimW9RVZngX51Y8h3BmKLAAAAJgxpYKDMaWC
+	gwAAAAtzc2gtZWQyNTUxOQAAACBgrXe4bKNhOzkCLWOmk4zDMimW9RVZngX51Y8h3BmKLA
+	AAAECItu0F8DIjWxTp+KeMDvX1lQwYtUvP2SfSVOfMOChxYGCtd7hso2E7OQItY6aTjMMy
+	KZb1FVmeBfnVjyHcGYosAAAADnJvb3RAbG9jYWxob3N0AQIDBAUGBw==
+	-----END OPENSSH PRIVATE KEY-----
+
+- created file "operation"  and pasted ssh private key in it
+
+- changed permission of the file to 600:
+	chmod 600 operation
+
+- connected to virtual machine:
+	ssh -i operation -p 50677 ctf-player@saturn.picoctf.net
+
+- once connected, listed files of remote machine:
+	ls
+
+- got flag
+
+- flag:
+	picoCTF{k3y_5l3u7h_b5066e83}

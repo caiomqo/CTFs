@@ -1,0 +1,5 @@
+- used same frequency attack tool:
+https://crypto.interactive-maths.com/frequency-analysis-breaking-the-code.html
+
+- flag:
+picoctf{fr3qu3ncy_4774ck5_4r3_c001_4871e6fb} 

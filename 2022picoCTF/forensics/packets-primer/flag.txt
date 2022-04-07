@@ -1,0 +1,3 @@
+- open file in wireshark
+- follow tcp stream
+- get flag

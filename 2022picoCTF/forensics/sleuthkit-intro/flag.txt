@@ -1,0 +1,17 @@
+- extracted image with:
+	gzip -d disk.img.gz
+
+- executed mmls in file:
+	mmls disk.img
+
+- got linux partition size of 202752
+
+- executed netcat:
+	nc saturn.picoctf.net 52279
+
+- typed size
+
+- got flag
+
+- flag:
+	picoCTF{mm15_f7w!}

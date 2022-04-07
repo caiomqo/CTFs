@@ -1,0 +1,45 @@
+- downloaded image .gz
+	wget https://artifacts.picoctf.net/c/236/disk.flag.img.gz
+
+- extracted:
+	gunzip disk.flag.img.gz
+
+- listed partitions:
+	mmls disk.flag.img
+
+- listed files inside partitions:
+	fls -o 2048 disk.flag.img
+	fls -o 206848 disk.flag.img
+	fls -o 411648 disk.flag.img
+	fls -o 411648 disk.flag.img 472
+
+- tried to read the flag files:
+	icat -o 411648 disk.flag.img 1876
+	icat -o 411648 disk.flag.img 1782
+
+- encrypted flag:
+	Salted__A��)o�B�Aq��ncb���#�>=D� /� >4Z�������Ȥ7� ���؎$�'% 
+
+- saved encrypted flag to file called "out"
+
+- checked .ash_history file:
+	└─$ icat -o 411648 disk.flag.img 1875
+	touch flag.txt
+	nano flag.txt 
+	apk get nano
+	apk --help
+	apk add nano
+	nano flag.txt 
+	openssl
+	openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
+	shred -u flag.txt
+	ls -al
+	halt
+
+- decrypted the flag:
+	openssl aes256 -d -salt -in out -out finally -k unbreakablepassword1234567
+
+-flag:
+	picoCTF{h4un71ng_p457_0a710765}
+
+
